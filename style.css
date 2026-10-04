@@ -1,0 +1,220 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700');
+
+body {
+    margin:  auto;
+    padding: 14px;
+    max-width: 1200px;
+    background: #D8D3C9;
+    font-family: 'Space Grotesk', sans-serif;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1.05fr 0.9fr;
+    grid-template-areas:
+        "box1 box2 box4"
+        "box1 box3 box5";
+    gap: 14px;
+}
+
+.box1 {
+    grid-area: box1;
+    background: #F5F2EA;
+    padding: 28px;
+    border-radius: 24px;
+    min-height: 570px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box1 h3 {
+    font-size: 12px;
+}
+
+.box1 h5 {
+    font-size: 90px;
+    margin-bottom: 15px;
+}
+
+.box1 p {
+    font-size: 16px;
+}
+
+.box2 {
+    grid-area: box2;
+    background: #181818;
+    color: #F5F2EA;
+    padding: 28px;
+    border-radius: 24px;
+    min-height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box2 h3 {
+    font-size: 12px;
+}
+
+.box2 h1 {
+    font-size: 36px;
+}
+
+.box2 p {
+    font-size: 14px;
+}
+
+.box3 {
+    grid-area: box3;
+    background: #F5F2EA;
+    padding: 28px;
+    border-radius: 24px;
+    min-height: 220px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box3 h3 {
+    font-size: 12px;
+}
+
+.box3 h1 {
+    font-size: 28px;
+}
+
+.box4 {
+    grid-area: box4;
+    background: #D8FF45;
+    padding: 28px;
+    border-radius: 24px;
+    min-height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box4 h3 {
+    font-size: 12px;
+}
+
+.box4 h1 {
+    font-size: 42px;
+}
+
+.box4 p {
+    font-size: 14px;
+}
+
+.box4 a {
+    font-size: 12px;
+}
+
+.box5 {
+    grid-area: box5;
+    background: #6758F5;
+    color: white;
+    padding: 28px;
+    border-radius: 24px;
+    min-height: 220px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box5 h3 {
+    font-size: 12px;
+}
+
+.box5 h1 {
+    font-size: 38px;
+}
+
+.box5 h2 {
+    font-size: 17px;
+}
+
+.box5 u {
+    font-size: 12px;
+}
+
+@media (max-width: 800px) {
+    body {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "box1 box1"
+            "box2 box4"
+            "box3 box5";
+    }
+
+    .box1 {
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 550px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "box1"
+            "box2"
+            "box4"
+            "box3"
+            "box5";
+    }
+
+    .box1 {
+        padding: 22px;
+        border-radius: 20px;
+        min-height: 400px;
+    }
+
+    .box1 h5 {
+        font-size: 60px;
+    }
+
+    .box2 {
+        padding: 22px;
+        border-radius: 20px;
+        min-height: 250px;
+    }
+
+    .box2 h1 {
+        font-size: 30px;
+    }
+
+    .box3 {
+        padding: 22px;
+        border-radius: 20px;
+        min-height: 250px;
+    }
+
+    .box3 h1 {
+        font-size: 30px;
+    }
+
+    .box4 {
+        padding: 22px;
+        border-radius: 20px;
+        min-height: 250px;
+    }
+
+    .box4 h1 {
+        font-size: 30px;
+    }
+
+    .box5 {
+        padding: 22px;
+        border-radius: 20px;
+        min-height: 250px;
+    }
+
+    .box5 h1 {
+        font-size: 30px;
+    }
+}
